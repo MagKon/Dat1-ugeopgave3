@@ -1,7 +1,10 @@
+import java.util.Random;
+
 class MathWork {
     static int[] arr = { 1, 1, 1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 6, 7, 8, 8, 9, 9, 10 };
     public static void main(String[] args) {
         printIsDivisible(getRandom(arr));
+        System.out.println( getRandom(arr));
         dessimateInt(5);
     }
 
@@ -14,8 +17,8 @@ class MathWork {
     }
 
     static int getRandom(int[] i) {
-        int random = (int) (Math.random() * i.length);
-        return i[random];
+        Random r = new Random();
+        return i[r.nextInt(i.length)];
     }
 
     static void dessimateInt(int n) {
