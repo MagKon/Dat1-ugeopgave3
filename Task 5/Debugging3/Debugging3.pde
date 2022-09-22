@@ -1,4 +1,4 @@
-boolean jobsDone = false;
+boolean jobsDone = /*false*/ true;
 
 void setup()
 {
@@ -8,7 +8,7 @@ void setup()
     }
 }
 
-void isJobDone()
+boolean isJobDone()
 {
     return jobsDone;    
 }
